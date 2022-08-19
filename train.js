@@ -10,7 +10,6 @@ function train(d, n, data) {
     let tun = data[i].split(" ")[1]; // unique number
     let p = data[i].split(" ")[2]; // amount of stations
     let time = d / s + p * 0.5;
-    console.log(time);
     arr.push([tun, time]);
     arr.sort((a, b) => a[1] - b[1]);
   }
