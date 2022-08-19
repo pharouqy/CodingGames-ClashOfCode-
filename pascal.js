@@ -10,14 +10,18 @@
 // 1 3 3 1
 // See Wikipedia on Pascal's triangle for more information, should you require it.
 
-function pascal(r) { // r is the row
+function pascal(r) {
+  // r is the row
   const arr = []; // array to store all the rows
-  for (let i = 0; i < r + 1; i++) { // loop through the row
+  for (let i = 0; i < r + 1; i++) {
+    // loop through the row
     const row = [1]; // array to store the values of the row
-    for (let j = 1; j < i; j++) { // loop through the row
+    for (let j = 1; j < i; j++) {
+      // loop through the row
       row.push(arr[i - 1][j - 1] + arr[i - 1][j]); // add the values of the previous row
     }
-    if (i > 0) { // if not the first row
+    if (i > 0) {
+      // if not the first row
       row.push(1); // add the value of the first row
     }
     arr.push(row); // add the row to the array
