@@ -1,5 +1,4 @@
 // Given a number N, print N minus N where all digits have been reversed.
-
 // 2 -> (reversed) 2 -> 2-2 = 0
 // 57-> (reversed) 75 -> 57-75 = -18
 
