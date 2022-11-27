@@ -59,3 +59,4 @@ function horoscope(str) {
 
 console.log(horoscope("Frank")); // There will be crime and a new friend and altruistic acts in your future.
 console.log(horoscope("Youcef")); // There will be realizing something important and a transformative experience and inspiration in your future.
+console.log(horoscope("Evelyn")); // There will be illness and reconciliation and completion of a big project in your future.
