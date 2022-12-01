@@ -1,3 +1,6 @@
+// Find the product of the sum of string of numbers separated with space
+//For exemple (1*(2+5)*(3+3+6+5)*(9+9+5+6+4+5)) = 4522
+
 function productOfSum(string) {
   const arr = string.split(" ");
   let product = 1;
