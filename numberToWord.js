@@ -63,7 +63,7 @@ function numberToWord(number) {
       if (number % 10 == 0) {
         return (result = digital3[number / 10 - 2]);
       } else {
-        digit = digital1[(number % 10) - 1];
+        const digit = digital1[(number % 10) - 1];
         return (result = digital3[Math.trunc(number / 10) - 2]) + "-" + digit;
       }
     }
