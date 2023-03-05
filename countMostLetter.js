@@ -19,6 +19,7 @@ function countMostLetter(sentence) {
     set[sentence[i]] = set[sentence[i]] ? set[sentence[i]] + 1 : 1;
   }
   for ([key, value] of Object.entries(set)) {
+    console.log([key, value]);
     if (max < value) {
       max = value;
     }

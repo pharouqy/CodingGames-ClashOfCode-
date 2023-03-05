@@ -6,3 +6,4 @@ function triangle(X, c) {
 
 triangle(3, "*");
 triangle(8, "#");
+triangle(15, "M");
