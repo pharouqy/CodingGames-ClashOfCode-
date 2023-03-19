@@ -26,9 +26,9 @@ function numberDoubleLetters(string) {
       count++;
     } else if (value > 2) {
       if (value % 2 === 0) {
-        count += 2;
+        count += value / 2;
       } else {
-        count++;
+        count += (value - 1) / 2;
       }
     }
   }
