@@ -22,7 +22,7 @@ function convert(str) {
   }
 }
 
-console.log(convert("3.2 thousand"));
-console.log(convert("3.322 hunderd"));
-console.log(convert("825.2 million"));
-console.log(convert("2000.2 hundred"));
+console.log(convert("3.2 thousand")); // 3200
+console.log(convert("3.322 hunderd")); // 3322000
+console.log(convert("825.2 million")); // 825200000
+console.log(convert("2000.2 hundred")); // 200020
