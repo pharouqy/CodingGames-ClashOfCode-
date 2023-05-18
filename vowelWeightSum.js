@@ -21,14 +21,12 @@ Sortie
 6*/
 
 function vowelWeightSum(string) {
-  let weight = { a: 1, e: 2, i: 3, o: 4, u: 5 };
+  let weight = { a: 1, e: 2, i: 3, o: 4, u: 5, A: 2, E: 4, I: 6, O: 8, U: 10 };
   let sum = 0;
   for (let i = 0; i < string.length; i++) {
-    let char = string[i].toLowerCase();
-    if (weight[char] === string[i].toLowerCase()) {
+    let char = string[i];
+    if (weight[char]) {
       sum += weight[char];
-    } else {
-      sum += 2 * weight[char];
     }
   }
   return sum;
