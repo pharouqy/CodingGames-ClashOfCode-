@@ -31,15 +31,15 @@ function presentOnClassrooms(arrayList, arrayExist) {
       result.push(arrayExist[i]);
     }
   }
-  return result.every((x, i) => x === arrayExist[i]) ? "none" : result;
+  return arrayExist.every((x, i) => x === result[i]) ? "none" : result;
 }
 
 console.log(
   presentOnClassrooms(
     ["john", "mike", "jotaro"],
-    ["john", "dio", "mike", "jotaro", "wang"]
+    ["john", "dio", "mike", "jotaro", "wang", "farouk"]
   )
-); // [ 'dio', 'wang' ]
+); // [ 'dio', 'wang', 'farouk' ]
 console.log(
   presentOnClassrooms(
     ["john", "mike", "jotaro"],
