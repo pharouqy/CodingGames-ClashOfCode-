@@ -42,5 +42,5 @@ function cards(x, n) {
   return parseInt(result);
 }
 
-console.log(cards(7, 73737));
-console.log(cards(9, 4587691));
+console.log(cards(7, 73737)); // 773737
+console.log(cards(9, 4587691)); // 45876991
