@@ -53,4 +53,4 @@ function accounting(orderedItems, receivedItems, invoicedItems) {
   return extract.join("");
 }
 
-console.log(accounting("A B C D E F", "B D F", "A B D F")); // BDF
+console.log(accounting("A B C D E F", "B D E F", "A B E D F")); // BDEF
