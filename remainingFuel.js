@@ -16,9 +16,7 @@ Sortie
 
 function remainingFuel(fuel, diistance, rate) {
   const remaining = rate * diistance;
-  return remaining < fuel || remaining - fuel === 0
-    ? fuel - remaining
-    : "not enough fuel";
+  return remaining - fuel <= 0 ? fuel - remaining : "not enough fuel";
 }
 
 console.log(remainingFuel(50, 25, 1)); // 25
