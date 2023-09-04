@@ -1,5 +1,6 @@
 /*A little while ago, my friend showed me a program that encoded a string into "NOSE" encryption. The program makes each letter in a string either the letter "N", "O", "S", or "E". The program decided what to replace each letter with like this:
 Let's call the current letter's index in the alphabet "I" (a=1, b=2, c=3)
+console.log("🚀 ~ file: encodeToNOSE.js:3 ~ index:", index)
 If "I" is divisible by 2, make the letter "N".
 If "I" is divisible by 3 and not 2, make the letter "O".
 If "I" is divisible by 5 and not 2 or 3, make the letter "S".
