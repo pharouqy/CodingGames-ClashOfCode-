@@ -32,7 +32,7 @@ function enoughPaintStock(paint, rooms, dimensions) {
         dimensions[i][1] * dimensions[i][2]);
     totalPainting += room / 5;
   }
-  return totalPainting < paint ? "true" : "false";
+  return totalPainting <= paint ? "true" : "false";
 }
 
 console.log(
