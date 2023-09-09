@@ -36,7 +36,6 @@ function median(array) {
       }
     }
   }
-  console.log(array);
   if (array.length % 2 !== 0) {
     return array[Math.floor(array.length / 2)];
   } else {
