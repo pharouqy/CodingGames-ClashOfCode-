@@ -28,8 +28,14 @@ function languageBF(string) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === "+") {
       memory++;
+      if (memory > 255) {
+        return "OVERFLOW";
+      }
     } else if (array[i] === "-") {
       memory--;
+      if (memory < 0) {
+        return "UNDERFLOW";
+      }
     } else if (array[i] === ".") {
       result += String.fromCharCode(memory);
     }
