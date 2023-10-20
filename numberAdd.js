@@ -28,7 +28,6 @@ function numberAdd(string, param) {
   const array = string.split(".").map((ele) => {
     return (ele = parseInt(ele));
   });
-  console.log(array);
   switch (param) {
     case "MAJOR":
       array[0] += 1;
