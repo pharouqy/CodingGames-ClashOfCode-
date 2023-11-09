@@ -41,8 +41,8 @@ Storyline: function rocket(fuel, fuel_consumption, distance, velocity, time) {
   } else if (fuel * fuel_consumption < distance) {
     return "Failure, Not enough fuel";
   } else {
-    return 'Welcome to Mars';
+    return "Welcome to Mars";
   }
 }
 
-console.log(rocket(1000, 10, 10, 100, 100)); // Failure, Not enough time*/
+console.log(rocket(1000, 10, 10, 100, 100)); // Failure, Not enough time
