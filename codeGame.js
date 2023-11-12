@@ -16,7 +16,7 @@ Entrée
 77 1 79 47 11 54 77 42
 Sortie
 @/\/\__/\@
-$/\/\/\/\/\@
+@_/\___$
 @/\/\___@
 $_/\___@
 $/\/\_/\_@
@@ -26,7 +26,7 @@ $_/\_/\_$*/
 
 function codeGame(array) {
   for (let i = 0; i < array.length; i++) {
-    let binary = array[i].toString(2);
+    let binary = array[i].toString(2).padStart(8, "0");
     let result = [];
     for (let j = 0; j < binary.length; j++) {
       if (j == "0" || j === binary.length - 1) {
@@ -39,4 +39,4 @@ function codeGame(array) {
   }
 }
 
-codeGame([77, 1, 79, 47, 11, 54, 77, 42]);
+codeGame([77, 110, 79, 47, 11, 54, 77, 42]);
