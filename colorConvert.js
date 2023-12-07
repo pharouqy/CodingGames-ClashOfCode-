@@ -18,11 +18,10 @@ Sortie
 */
 
 function colorConvert(color) {
-  const hexa = color.split("#")[1];
   const array = [];
-  for (let i = 0; i < hexa.length; i++) {
+  for (let i = 1; i < color.length; i++) {
     if (i % 2 === 0) {
-      array.push([hexa[i], hexa[i + 1]]);
+      array.push([color[i - 1], color[i]]);
     }
   }
   let result = [];
