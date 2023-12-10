@@ -36,6 +36,6 @@ function emoticon(faces) {
   return happinessScore;
 }
 
-console.log(emoticon("=) ^_^")) // 2
-console.log(emoticon("=) :(")) // 0
-console.log(emoticon("=) ^_^ :(")) // 1
+console.log(emoticon("=) ^_^")); // 2
+console.log(emoticon("=) :(")); // 0
+console.log(emoticon("=) ^_^ :(")); // 1
