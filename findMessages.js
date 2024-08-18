@@ -25,15 +25,15 @@ function findMessages(number) {
     4: "Receive Notification",
     8: "Update Status",
   };
-  const kies = [1, 2, 4, 8];
+  const keys = Object.keys(messages);
   const array = [];
   if (number <= 0) {
     return null;
   } else {
-    for (let i = kies.length - 1; i >= 0; i--) {
-      if (number >= kies[i]) {
-        array.push(messages[kies[i]]);
-        number -= kies[i];
+    for (let i = keys.length - 1; i >= 0; i--) {
+      if (number >= keys[i]) {
+        array.push(messages[keys[i]]);
+        number -= keys[i];
       }
       continue;
     }
